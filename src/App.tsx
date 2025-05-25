@@ -31,7 +31,7 @@ function App() {
     const subscription = data.subscription
 
     return () => subscription.unsubscribe()
-  })
+  }, [])
 
   if (!user) {
     return <Auth />
